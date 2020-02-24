@@ -13,3 +13,7 @@ E
 app/public/index.html,7/8/78bb712840c5dd35af2e0e8eca52f90ee712aad6
 J
 app/src/components/Home.js,e/a/eaa20224bea7fdb81744a9137c2cc458b184ebc1
+M
+app/src/components/contact.js,7/4/7497abb080e4f6d78d6840eb082e68bf9ee8e88e
+L
+app/src/components/NavBar.js,a/7/a7a55798b9c872f4d648b34b5bbacc539f778819
