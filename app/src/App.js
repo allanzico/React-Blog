@@ -1,9 +1,10 @@
 import React from 'react';
-import NavBar from "./components/NavBar";
-import {BrowserRouter, Route} from 'react-router-dom'
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/contact";
+import NavBar from "./components/Layout/NavBar";
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Home from "./components/Routes/Home";
+import About from "./components/Routes/About";
+import Contact from "./components/Routes/Contact";
+import Post from "./components/Routes/Post";
 
 
 
@@ -13,9 +14,12 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <NavBar/>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
+         <Switch>
+             <Route exact path="/" component={Home}/>
+             <Route path="/about" component={About}/>
+             <Route path="/contact" component={Contact}/>
+             <Route path="/:post_id" component={Post}/>
+         </Switch>
         </div>
       </BrowserRouter>
 
